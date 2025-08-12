@@ -1,0 +1,61 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: none;
+}
+
+.fade-in.visible {
+  animation: fadeInUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.fade-in-scale {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+}
+
+.fade-in-scale.visible {
+  animation: fadeInScale 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Different delays for staggered animations */
+.fade-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.fade-delay-3 {
+  animation-delay: 0.6s;
+}
+
+.fade-delay-4 {
+  animation-delay: 0.8s;
+}
+
+.fade-delay-5 {
+  animation-delay: 1.0s;
+}
