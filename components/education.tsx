@@ -37,11 +37,11 @@ export function Education() {
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-2xl text-foreground mb-2">
-                        Bachelor of Science in Computer Science
+                        Bachelor of Science in Computer Science and Sustainability
                       </CardTitle>
                       <div className="flex items-center gap-2 text-muted-foreground mb-2">
                         <Calendar className="h-4 w-4" />
-                        <span className="font-medium">University of California, Berkeley • 2022-2026</span>
+                        <span className="font-medium">Minerva University, San Francisco • 2023-2027</span>
                       </div>
                     </div>
                   </div>
@@ -59,12 +59,12 @@ export function Education() {
                       <h4 className="font-bold text-foreground mb-3">Relevant Coursework:</h4>
                       <div className="flex flex-wrap gap-2">
                         {[
-                          "Data Structures",
-                          "Algorithms", 
-                          "Database Systems",
-                          "Software Engineering",
-                          "Machine Learning",
-                          "Computer Networks",
+                          "Data Structures and Algorithms",
+                          "Linear Algebra", 
+                          "Single and Multivariable Calculus",
+                          "Probability",
+                          "Statistics",
+                          "Formal Analysis"
                         ].map((course, index) => (
                           <Badge
                             key={index}
@@ -116,7 +116,7 @@ export function Education() {
                           </div>
                           <div className="flex items-center gap-2 text-muted-foreground mb-4">
                             <Calendar className="h-5 w-5" />
-                            <span className="font-semibold text-lg">TechCorp Solutions • Summer 2024</span>
+                            <span className="font-semibold text-lg">King of t Solutions • Summer 2024</span>
                           </div>
                         </div>
                       </div>

@@ -37,15 +37,18 @@ export function About() {
                 <div className="space-y-6">
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     I'm a junior Computer Science student at{" "}
-                    <span className="font-semibold text-foreground">UC Berkeley</span> with a passion for creating
-                    innovative software solutions. My journey in tech started with curiosity about how websites work, and
-                    has evolved into a deep love for full-stack development and machine learning.
+                    <span className="font-semibold text-foreground">Minerva University</span>   driven to turn ideas into impactful software. 
+                      What started as curiosity about how laptops work has evolved into a passion for full-stack development and machine learning,
+                       driving me to build projects that try to tackle real-world challenges.    
                   </p>
 
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    When I'm not coding, you can find me contributing to open-source projects, participating in
-                    hackathons, or exploring the latest tech trends. I believe in writing clean, efficient code and
-                    creating user experiences that make a real difference.
+                      Outside the code editor, I'm often behind a camera capturing landscapes, 
+                      traveling to new places, experimenting with new recipes, watching F1,
+                      hiking, playing board games with friends, 
+                      or diving into the latest tech trends. 
+                      I believe in writing clean, efficient code and designing user experiences 
+                      that delight and empower users.
                   </p>
                 </div>
 
@@ -54,16 +57,16 @@ export function About() {
                     <h4 className="font-bold text-foreground mb-4 text-lg">Interests</h4>
                     <ul className="text-muted-foreground space-y-2">
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> Web Development
+                        <span className="text-foreground mr-2">▸</span> App Development
                       </li>
                       <li className="flex items-center">
                         <span className="text-foreground mr-2">▸</span> Machine Learning
                       </li>
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> Open Source
+                        <span className="text-foreground mr-2">▸</span> UI/UX
                       </li>
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> UI/UX Design
+                        <span className="text-foreground mr-2">▸</span> Research
                       </li>
                     </ul>
                   </div>
@@ -71,16 +74,16 @@ export function About() {
                     <h4 className="font-bold text-foreground mb-4 text-lg">Currently</h4>
                     <ul className="text-muted-foreground space-y-2">
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> Learning React Native
+                        <span className="text-foreground mr-2">▸</span> Learning more on MCP servers
                       </li>
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> Building side projects
+                        <span className="text-foreground mr-2">▸</span> Exploring cloud computing
                       </li>
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> Contributing to OSS
+                        <span className="text-foreground mr-2">▸</span> Reading random research papers on any field
                       </li>
                       <li className="flex items-center">
-                        <span className="text-foreground mr-2">▸</span> Seeking internships
+                        <span className="text-foreground mr-2">▸</span> Publishing a research paper on fluid dynamics
                       </li>
                     </ul>
                   </div>
