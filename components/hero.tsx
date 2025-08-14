@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Download } from "lucide-react"
+import { Github, Mail, Download } from "lucide-react"
 import { FadeInSection } from "./fade-in-section"
 import { MagneticElement } from "./magnetic-element"
 import { ChromaShift } from "./chroma-shift"
@@ -81,16 +81,6 @@ export function Hero() {
                   className="w-12 h-12 flex items-center justify-center rounded-full bg-muted border border-border hover:bg-foreground hover:text-background transition-all duration-300"
                 >
                   <Github className="h-5 w-5" />
-                </a>
-              </MagneticElement>
-              <MagneticElement strength={0.4}>
-                <a
-                  href="https://linkedin.com/in/hectar-carson"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 flex items-center justify-center rounded-full bg-muted border border-border hover:bg-foreground hover:text-background transition-all duration-300"
-                >
-                  <Linkedin className="h-5 w-5" />
                 </a>
               </MagneticElement>
               <MagneticElement strength={0.4}>

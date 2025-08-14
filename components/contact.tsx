@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react"
+import { Send } from "lucide-react"
 import { FadeInSection } from "./fade-in-section"
 
 export function Contact() {
@@ -22,64 +22,17 @@ export function Contact() {
             </div>
           </FadeInSection>
 
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Info */}
+          <div className="max-w-2xl mx-auto">
+            {/* Intro Text */}
             <FadeInSection delay={200}>
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-3xl font-bold mb-6 text-foreground">
-                    Let's Connect!
-                  </h3>
-                  <p className="text-muted-foreground text-lg leading-relaxed">
-                    I'm always interested in new opportunities and exciting projects. Whether you have a question or just
-                    want to say hi, feel free to reach out!
-                  </p>
-                </div>
-
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4 p-4 bg-muted rounded-xl border border-border">
-                    <div className="p-3 bg-foreground text-background rounded-lg">
-                      <Mail className="h-5 w-5" />
-                    </div>
-                    <span className="text-foreground">hectar@example.com</span>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-muted rounded-xl border border-border">
-                    <div className="p-3 bg-foreground text-background rounded-lg">
-                      <Phone className="h-5 w-5" />
-                    </div>
-                    <span className="text-foreground">(555) 123-4567</span>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-muted rounded-xl border border-border">
-                    <div className="p-3 bg-foreground text-background rounded-lg">
-                      <MapPin className="h-5 w-5" />
-                    </div>
-                    <span className="text-foreground">San Francisco Bay Area, CA</span>
-                  </div>
-                </div>
-
-                <div className="flex gap-4 pt-4">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="border-border hover:bg-foreground hover:text-background transition-all duration-300"
-                  >
-                    <Github className="h-5 w-5" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="border-border hover:bg-foreground hover:text-background transition-all duration-300"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="border-border hover:bg-foreground hover:text-background transition-all duration-300"
-                  >
-                    <Mail className="h-5 w-5" />
-                  </Button>
-                </div>
+              <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold mb-6 text-foreground">
+                  Let's Connect!
+                </h3>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  I'm always interested in new opportunities and exciting projects. Whether you have a question or just
+                  want to say hi, feel free to reach out!
+                </p>
               </div>
             </FadeInSection>
 

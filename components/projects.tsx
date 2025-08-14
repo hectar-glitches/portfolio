@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -68,15 +70,14 @@ export function Projects() {
             </div>
           </FadeInSection>
 
-          {/* Horizontal scrollable container */}
-          <div className="overflow-x-auto pb-6">
-            <div className="flex gap-8 min-w-max px-4">
-              {projects.map((project, index) => (
-                <FadeInSection key={index} delay={index * 200} variant="scale">
-                  <Card
-                    className="group overflow-hidden border border-border/30 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-card/70 w-80 flex-shrink-0 silver-shadow backdrop-blur-sm"
-                  >
-                    {project.featured && (
+          {/* Grid layout container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+            {projects.map((project, index) => (
+              <FadeInSection key={index} delay={index * 200} variant="scale">
+                <Card
+                  className="group overflow-hidden border border-border/30 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-card/70 silver-shadow backdrop-blur-sm h-full flex flex-col"
+                >
+                  {project.featured && (
                     <div className="absolute top-4 right-4 z-10">
                       <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center">
                         <Star className="w-3 h-3 mr-1" />
@@ -94,14 +95,16 @@ export function Projects() {
                     />
                   </div>
 
-                  <CardHeader className="pb-4">
+                  <CardHeader className="pb-4 flex-grow">
                     <CardTitle className="text-xl font-bold text-foreground transition-colors">
                       {project.title}
                     </CardTitle>
-                    <CardDescription className="text-muted-foreground leading-relaxed">{project.description}</CardDescription>
+                    <CardDescription className="text-muted-foreground leading-relaxed">
+                      {project.description}
+                    </CardDescription>
                   </CardHeader>
 
-                  <CardContent>
+                  <CardContent className="mt-auto">
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge
@@ -119,6 +122,7 @@ export function Projects() {
                         variant="outline"
                         size="sm"
                         className="flex-1 border-border/50 hover:border-primary/50 hover:bg-primary/10 hover:text-primary transition-all duration-300 bg-transparent"
+                        onClick={() => window.open(project.github, '_blank')}
                       >
                         <Github className="mr-2 h-4 w-4" />
                         Code
@@ -126,6 +130,7 @@ export function Projects() {
                       <Button
                         size="sm"
                         className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 silver-shadow"
+                        onClick={() => window.open(project.demo, '_blank')}
                       >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Demo
@@ -135,7 +140,6 @@ export function Projects() {
                 </Card>
               </FadeInSection>
             ))}
-            </div>
           </div>
         </div>
       </div>
