@@ -20,7 +20,7 @@ export function Hero() {
           <FadeInSection delay={200} variant="scale">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Hi, I'm{" "}
-              <MagneticElement strength={0.5}>
+              <MagneticElement strength={0.2}>
                 <ChromaShift 
                   intensity={1.5} 
                   radius={120}
@@ -34,14 +34,10 @@ export function Hero() {
             </h1>
           </FadeInSection>
 
-          <FadeInSection delay={400}>
-            <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">Software Engineering Intern</h2>
-          </FadeInSection>
-
           <FadeInSection delay={600}>
             <p className="text-xl text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Passionate computer science and sustainability student who always seeks to be innovative in{" "}
-              <span className="font-semibold text-foreground">full-stack development</span>,{" "}
+              Passionate computer science and sustainability student who always seeks to be innovative while{" "}
+              <span className="font-semibold text-foreground">solving problems</span>,{" "}
               <span className="font-semibold text-foreground">machine learning</span>, and{" "}
               <span className="font-semibold text-foreground">scalable architectures</span>.
             </p>
@@ -49,23 +45,12 @@ export function Hero() {
 
           <FadeInSection delay={800}>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-              <MagneticElement strength={0.3}>
+              <MagneticElement strength={0.1}>
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-foreground text-background hover:bg-foreground/90 transition-all duration-300"
-                >
+                  className="w-full sm:w-auto bg-foreground text-background hover:bg-foreground/90 transition-all duration-300">
                   <Mail className="mr-2 h-5 w-5" />
                   Get In Touch
-                </Button>
-              </MagneticElement>
-              <MagneticElement strength={0.3}>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="w-full sm:w-auto border-2 border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Download Resume
                 </Button>
               </MagneticElement>
             </div>

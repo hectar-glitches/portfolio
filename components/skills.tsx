@@ -9,22 +9,18 @@ export function Skills() {
   const skillCategories = [
     {
       title: "Frontend",
-      icon: "💻",
       skills: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML/CSS", "Next.js"],
     },
     {
       title: "Backend", 
-      icon: "⚙️",
       skills: ["Python", "Node.js", "FastAPI", "REST APIs", "Express.js"],
     },
     {
       title: "Database",
-      icon: "🗄️",
       skills: ["PostgreSQL", "MongoDB", "Firebase", "Redis"],
     },
     {
-      title: "Tools & DevOps",
-      icon: "🛠️",
+      title: "Tools ",
       skills: ["Git", "Docker", "AWS", "Vercel", "Figma", "Jira"],
     },
   ]
@@ -56,7 +52,7 @@ export function Skills() {
                   <Card className="border border-border/30 bg-card/50 hover:bg-card hover:border-primary/30 transition-all duration-500 transform hover:-translate-y-2 silver-shadow backdrop-blur-sm h-full">
                     <CardHeader className="pb-4">
                       <CardTitle className="text-xl text-foreground font-bold flex items-center gap-3">
-                        <span className="text-2xl">{category.icon}</span>
+                        <span className="text-2xl"></span>
                         {category.title}
                       </CardTitle>
                     </CardHeader>

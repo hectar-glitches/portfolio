@@ -64,7 +64,9 @@ export function Education() {
                           "Single and Multivariable Calculus",
                           "Probability",
                           "Statistics",
-                          "Formal Analysis"
+                          "Formal Analysis",
+                          "Software Engineering",
+
                         ].map((course, index) => (
                           <Badge
                             key={index}
@@ -103,23 +105,25 @@ export function Education() {
                           <Briefcase className="h-8 w-8" />
                         </div>
                         <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-2">
-                            <ChromaShift intensity={1.5} radius={80}>
-                              <CardTitle className="text-3xl text-foreground font-bold">
-                                Software Engineering Intern
-                              </CardTitle>
-                            </ChromaShift>
-                          </div>
-                          <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                            <Calendar className="h-5 w-5" />
-                            <span className="font-semibold text-lg">King of the Curve, Saint Louis, MO • Summer 2025</span>
+                          <div className="flex flex-col gap-1 mb-4">
+                            <CardTitle className="text-xl text-foreground">Software Engineering Intern</CardTitle>
+                            <a
+                              href="https://kingofthecurve.org/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-semibold text-lg text-muted-foreground hover:text-foreground transition-colors"
+                            >
+                              King of the Curve, Saint Louis, MO • Summer 2025
+                            </a>
+                            
+                      
                           </div>
                         </div>
                       </div>
                     </CardHeader>
                     <CardContent className="pt-0 relative z-10">
                       <div className="grid gap-6">
-                        <div className="bg-muted/50 p-6 rounded-xl border border-border/30">
+                        <div className="bg-muted/50 p-6 rounded-xl">
                           <h4 className="font-bold text-foreground text-lg mb-4 flex items-center gap-2">
                             {/* <Award className="h-5 w-5 text-primary" /> */}
                             Achievements & Responsibilities
@@ -162,7 +166,7 @@ export function Education() {
                             <li className="flex items-start gap-3">
                               <span className="text-primary mt-1.5 font-bold">▶</span>
                               <span className="font-medium">
-                                Actively contributed to team-wide code reviews and bug fixes, agile sprint planning sessions, and team bonding exercises.
+                                Actively contributed to team-wide reviews and bug fixes of legacy code, agile sprint planning sessions, and team bonding exercises.
                                 <br />
                                 <strong>Technologies:</strong> React, Tailwind CSS, Jira, Git, Agile methodologies
                               </span>
@@ -200,6 +204,37 @@ export function Education() {
                         <Award className="h-5 w-5" />
                       </div>
                       <div className="flex-1">
+                        <CardTitle className="text-xl text-foreground">Chief Scientist</CardTitle>
+                        <div className="flex items-center gap-2 text-muted-foreground mt-1">
+                          <Calendar className="h-4 w-4" />
+                          <span className="font-medium">NASA Proposal Writing and Evaluation Experience, Tempe, Arizona • Jan. 2025 – Apr. 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="text-foreground mt-1.5">•</span>
+                        <span>Led a 5-person team to design a space mission concept leveraging LightGBM and TCN models to predict full Solar Particle Event (SPE) intensity for astronaut risk mitigation on future lunar missions and solar storm predictions on earth</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-foreground mt-1.5">•</span>
+                        <span>Ranked 3rd out of 60+ teams nationally for technical merit, feasibility, and innovation in solar event forecasting</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </FadeInSection>
+
+              <FadeInSection delay={700}>
+                <Card className="border border-border/30 bg-card/70 silver-shadow backdrop-blur-sm">
+                  <CardHeader>
+                    <div className="flex items-start gap-4">
+                      <div className="p-3 bg-muted text-foreground rounded-xl">
+                        <Award className="h-5 w-5" />
+                      </div>
+                      <div className="flex-1">
                         <CardTitle className="text-xl text-foreground">Research Assistant</CardTitle>
                         <div className="flex items-center gap-2 text-muted-foreground mt-1">
                           <Calendar className="h-4 w-4" />
@@ -212,11 +247,15 @@ export function Education() {
                     <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Collaborated with Dr. Wei-Ling Tseng to adapt research on Saturn's moon, tailoring simulation models using the Space Weather Modeling Framework, AstroPy, and SPICE toolkit to model the trajectory of pickup ions on our moon's surface</span>
+                        <span>Collaborated with Dr. Wei-Ling Tseng to adapt research on Saturn's moon Enceladus, tailoring simulation models using the Space Weather Modeling Framework, AstroPy, and SPICE toolkit to model the trajectory of pickup ions on our moon's surface for future lunar exploration missions</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Applied computational physics to achieve a 93% simulation accuracy with Saturn's model</span>
+                        <span>Applied computational physics and advanced numerical methods to achieve a 93% simulation accuracy with Saturn's magnetospheric model, contributing to NASA's understanding of space weather effects</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-foreground mt-1.5">•</span>
+                        <span>Developed Python scripts for data analysis and visualization of ion trajectory patterns, processing over 10,000 data points from spacecraft measurements</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -231,7 +270,7 @@ export function Education() {
                         <Briefcase className="h-5 w-5" />
                       </div>
                       <div className="flex-1">
-                        <CardTitle className="text-xl text-foreground">Software Development Intern</CardTitle>
+                        <CardTitle className="text-xl text-foreground">Software Intern</CardTitle>
                         <div className="flex items-center gap-2 text-muted-foreground mt-1">
                           <Calendar className="h-4 w-4" />
                           <span className="font-medium">XgamingServers (Remote) • Jun. 2024 - Aug. 2024</span>
@@ -243,11 +282,19 @@ export function Education() {
                     <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Customized and managed over 200 back-end servers for online gaming using ISPConfig, ensuring high availability, performance, and seamless gaming experiences for clients</span>
+                        <span>Customized and managed over 200 back-end servers for online gaming using ISPConfig, ensuring high availability, performance optimization, and seamless gaming experiences for clients across multiple game platforms</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Led the company blog on WordPress, increasing organic traffic and engagement, achieving over 50,000+ monthly page views through SEO optimization on Google Analytics, content strategy, and social media integration</span>
+                        <span>Led the company blog on WordPress, increasing organic traffic and engagement by implementing SEO optimization strategies, achieving over 50,000+ monthly page views through Google Analytics insights, content strategy, and social media integration</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-foreground mt-1.5">•</span>
+                        <span>Automated server deployment processes using shell scripts and monitoring tools, reducing setup time by 40% and improving system reliability</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-foreground mt-1.5">•</span>
+                        <span>Collaborated with development teams to troubleshoot technical issues and implement custom server configurations for gaming clients</span>
                       </li>
                     </ul>
                   </CardContent>
@@ -274,15 +321,19 @@ export function Education() {
                     <ul className="space-y-3 text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Assisted over 30 students in learning Python programming</span>
+                        <span>Assisted over 30 students in learning Python programming fundamentals, data structures, and algorithmic problem-solving techniques through personalized tutoring sessions</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Held office hours and led discussion sections</span>
+                        <span>Held weekly office hours and led interactive discussion sections, helping students improve their coding skills and understanding of computer science concepts</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-foreground mt-1.5">•</span>
-                        <span>Graded assignments and provided feedback</span>
+                        <span>Graded assignments and programming projects, providing detailed feedback and constructive criticism to help students improve their coding practices and debugging skills</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-foreground mt-1.5">•</span>
+                        <span>Collaborated with professors to develop supplementary learning materials and practice problems to enhance student engagement and comprehension</span>
                       </li>
                     </ul>
                   </CardContent>

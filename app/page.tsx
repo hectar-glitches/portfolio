@@ -13,9 +13,9 @@ export default function Portfolio() {
       <main className="scroll-smooth">
         <Hero />
         <About />
-        <Skills />
-        <Projects />
         <Education />
+        <Projects />
+        <Skills />
         <Contact />
       </main>
     </div>

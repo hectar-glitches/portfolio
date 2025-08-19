@@ -25,7 +25,7 @@ export function About() {
             <FadeInSection delay={300} variant="scale">
               <div className="relative">
                 <img
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/profile.jpeg?height=500&width=500"
                   alt="Hectar Carson"
                   className="rounded-2xl w-full max-w-md mx-auto relative z-10 border-4 border-border"
                 />
