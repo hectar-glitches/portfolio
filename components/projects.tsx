@@ -10,44 +10,46 @@ import { ChromaShift } from "./chroma-shift"
 export function Projects() {
   const projects = [
     {
-      title: "TravelMind Pro - AI-Powered Travel Ecosystem",
+      title: "Echo Chamber",
       description:
-        "A comprehensive travel platform that leverages artificial intelligence, real-time data processing, and social networking to revolutionize trip planning and travel experiences. Features AI trip planning, real-time price monitoring, and intelligent itinerary generation.",
-      image: "/placeholder.svg?height=250&width=400",
-      technologies: ["Next.js", "TypeScript", "Tailwind", "MIT License"],
-      github: "https://github.com/hectar-glitches/travelmind-pro",
-      demo: "https://travelmind-pro.com",
-      featured: true,
-    },
-    {
-      title: "Echo Chamber - Project Management App",
-      description:
-        "EchoChamber is a personal memory management system that combines 3D visualization, AI processing, and gamified journaling. Instead of plain text notes, your thoughts become living artifacts in a beautiful memory palace, each with its own AI-generated character and personality.",
-      image: "/placeholder.svg?height=250&width=400",
-      technologies: ["React", "Node.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
+        "Echo Chamber transforms your thoughts into a living, interactive 3D world where memories become characters with personalities. Features include 3D visualization of memories, AI-generated character personalities, and a gamified journaling experience. Built for users who want to make memory management engaging and visually rich.",
+      technologies: ["TypeScript", "React", "Node.js", "PostgreSQL", "Socket.io", "Tailwind CSS"],
       github: "https://github.com/hectar-glitches/echo-chamber",
-      demo: "https://taskflow-demo.com",
-      featured: true,
     },
     {
-      title: "AI powered Stock Predictor",
+      title: "Stock Predictor Fullstack",
       description:
-        "A fullstack application for predicting stock prices while considering current market sentiment.",
-      image: "/placeholder.svg?height=250&width=400",
+        "A full-stack stock forecasting dashboard with an ML backend for sentiment analysis from News API. Provides real-time stock price predictions, sentiment analysis from news sources, and an interactive dashboard for users to visualize and interpret market trends.",
       technologies: ["Python", "JavaScript", "Alpha Vantage API", "NewsAPI"],
       github: "https://github.com/hectar-glitches/stock-predictor-fullstack",
-      demo: "https://studybuddy-ai.com",
-      featured: true,
     },
     {
-      title: "Stellar Clash",
+      title: "Ion Trajectory Integration",
       description:
-        "A real-time multiplayer space combat game built with Next.js, TypeScript, and the Web Bluetooth API..",
-      image: "/placeholder.svg?height=250&width=400",
-      technologies: ["TypeScript", "JavaScript", "Next.js", "CSS", "Web Bluetooth API"],
+        "A research project in collaboration with a professor, focused on simulations involving ion movement in the moon's exobase. Implements physics-based ion trajectory simulation and provides tools for visualizing and analyzing ion paths in a scientific context.",
+      technologies: ["Python"],
+      github: "https://github.com/hectar-glitches/ion-trajectory-intergration",
+    },
+    {
+      title: "Chat App",
+      description:
+        "An educational chat platform designed to facilitate direct messaging, calls, and group discussions around a subject. Features real-time messaging and calls, group chat support, and a user-friendly interface tailored for educational environments.",
+      technologies: ["Dart", "Flutter"],
+      github: "https://github.com/hectar-glitches/chat_app",
+    },
+    {
+      title: "Bluetooth Game",
+      description:
+        "A real-time multiplayer space combat game built with Next.js, TypeScript, and the Web Bluetooth API. Supports multiplayer space battles, Web Bluetooth device connectivity, and is built with modern web technologies for a seamless gaming experience.",
+      technologies: ["TypeScript", "Next.js", "Web Bluetooth API", "CSS"],
       github: "https://github.com/hectar-glitches/bluetooth-game",
-      demo: "https://ecotracker-app.com",
-      featured: true,
+    },
+    {
+      title: "KV Store",
+      description:
+        "A distributed key-value store project with sharding for scalability. Implements efficient data storage and retrieval, supports sharding for horizontal scaling, and is designed for high availability and performance in distributed systems.",
+      technologies: ["TypeScript"],
+      github: "https://github.com/hectar-glitches/kv-store",
     },
   ]
 
@@ -63,7 +65,7 @@ export function Projects() {
                 colors={['#a8b8c8', '#9fb0c7', '#86a0ba', '#7d94b3', '#6d8fad']}
               >
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 silver-text-gradient">
-                  Featured Projects
+                  Projects
                 </h2>
               </ChromaShift>
               <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
@@ -77,23 +79,9 @@ export function Projects() {
                 <Card
                   className="group overflow-hidden border border-border/30 hover:border-primary/50 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-card/70 silver-shadow backdrop-blur-sm h-full flex flex-col"
                 >
-                  {project.featured && (
-                    <div className="absolute top-4 right-4 z-10">
-                      <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center">
-                        <Star className="w-3 h-3 mr-1" />
-                        Featured
-                      </div>
-                    </div>
-                  )}
+                  {/* Featured banner removed as per request */}
 
-                  <div className="aspect-video overflow-hidden relative">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
-                    <img
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
+                  {/* Image removed as per request to remove placeholder photos */}
 
                   <CardHeader className="pb-4 flex-grow">
                     <CardTitle className="text-xl font-bold text-foreground transition-colors">
@@ -126,14 +114,6 @@ export function Projects() {
                       >
                         <Github className="mr-2 h-4 w-4" />
                         Code
-                      </Button>
-                      <Button
-                        size="sm"
-                        className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 silver-shadow"
-                        onClick={() => window.open(project.demo, '_blank')}
-                      >
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Demo
                       </Button>
                     </div>
                   </CardContent>
